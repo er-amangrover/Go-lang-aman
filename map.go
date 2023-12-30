@@ -9,7 +9,7 @@ type Vertex struct {
 var m map[string]Vertex
 
 func main() {
-	m = make(map[string]Vertex)
+	m = make(map[string]Vertex, 10)
 	m["Bell Labs"] = Vertex{
 		40.490, -74.234,
 	}
